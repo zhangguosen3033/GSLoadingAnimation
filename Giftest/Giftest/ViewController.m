@@ -24,20 +24,16 @@
     
     [self.view addSubview:view];
     
+    //加载转场动画
     [[GS_SVPmanager manager]GS_SVPshowGif:self];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         //调用绘制虚线
         [[GS_DrawLineManager manager]GS_DrawImaginaryLineWithStartPoint:CGPointMake(20, 100) EndPoint:CGPointMake(300, 100) LineColor:[UIColor blackColor] LineHeight:1.0f InView:view];
-
         
-        
-        
-        
-        
-        
-        [[GS_SVPmanager manager]GS_SVPhidGif:self];
+    //动画加载结束
+    [[GS_SVPmanager manager]GS_SVPhidGif:self];
         
         NSLog(@"结束了");
     });
