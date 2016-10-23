@@ -29,6 +29,7 @@
 		7445DDA71DB74C440076AB1F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7445DD991DB74C440076AB1F /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		7445DDA81DB74C440076AB1F /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7445DD9B1DB74C440076AB1F /* View+MASAdditions.m */; };
 		7445DDA91DB74C440076AB1F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7445DD9E1DB74C440076AB1F /* ViewController+MASAdditions.m */; };
+		747321C21DB9FDEC002B968A /* GS_DrawLineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 747321C11DB9FDEC002B968A /* GS_DrawLineManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		7445DD9C1DB74C440076AB1F /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		7445DD9D1DB74C440076AB1F /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		7445DD9E1DB74C440076AB1F /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		747321C01DB9FDEC002B968A /* GS_DrawLineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GS_DrawLineManager.h; sourceTree = "<group>"; };
+		747321C11DB9FDEC002B968A /* GS_DrawLineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GS_DrawLineManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,7 @@
 				7445DD4D1DB749E30076AB1F /* AppDelegate.m */,
 				7445DD4F1DB749E30076AB1F /* ViewController.h */,
 				7445DD501DB749E30076AB1F /* ViewController.m */,
+				747321BF1DB9FDD0002B968A /* draw */,
 				740222471DB869F6002A7611 /* 自封装SVP */,
 				7445DD521DB749E30076AB1F /* Main.storyboard */,
 				7445DD551DB749E30076AB1F /* Assets.xcassets */,
@@ -232,6 +236,15 @@
 				7445DD9E1DB74C440076AB1F /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		747321BF1DB9FDD0002B968A /* draw */ = {
+			isa = PBXGroup;
+			children = (
+				747321C01DB9FDEC002B968A /* GS_DrawLineManager.h */,
+				747321C11DB9FDEC002B968A /* GS_DrawLineManager.m */,
+			);
+			path = draw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +386,7 @@
 				7445DD511DB749E30076AB1F /* ViewController.m in Sources */,
 				7445DD4E1DB749E30076AB1F /* AppDelegate.m in Sources */,
 				7445DD4B1DB749E30076AB1F /* main.m in Sources */,
+				747321C21DB9FDEC002B968A /* GS_DrawLineManager.m in Sources */,
 				7445DDA81DB74C440076AB1F /* View+MASAdditions.m in Sources */,
 				7445DDA01DB74C440076AB1F /* MASCompositeConstraint.m in Sources */,
 				7445DDA41DB74C440076AB1F /* MASViewAttribute.m in Sources */,
