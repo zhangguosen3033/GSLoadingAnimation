@@ -11,5 +11,12 @@
 @interface ViewController : UIViewController
 
 
+
+@property(nonatomic,strong)UITextField *textfiled;
+
+@property(nonatomic,strong)UIView *KeyView;
+
+@property (nonatomic, strong)NSMutableArray *numberArray;
+
 @end
 
