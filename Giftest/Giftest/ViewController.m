@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     view = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
+
     [self.view addSubview:view];
     
     //加载转场动画
