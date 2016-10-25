@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GS_SVPmanager.h"
 #import "GS_DrawLineManager.h"
+#import "Masonry.h"
 @interface ViewController ()
 {
     UIView *windowview;
@@ -32,6 +33,16 @@
         //调用绘制虚线
         [[GS_DrawLineManager manager]GS_DrawImaginaryLineWithStartPoint:CGPointMake(20, 100) EndPoint:CGPointMake(300, 100) LineColor:[UIColor blackColor] LineHeight:1.0f InView:windowview];
         
+        //按钮上半部切圆角
+        UIButton * bottomBtn = [[UIButton alloc]initWithFrame:CGRectMake(100, 280, 100, 50)];;
+        UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:bottomBtn.layer.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10.0f, 10.0f)];
+        CAShapeLayer * maskLayer = [CAShapeLayer new];
+        maskLayer.frame = bottomBtn.layer.bounds;
+        maskLayer.path = maskPath.CGPath;
+        bottomBtn.layer.mask = maskLayer;
+        [self.view addSubview:bottomBtn];
+        [bottomBtn setBackgroundColor:[UIColor colorWithRed:0.13 green:0.72 blue:0.71 alpha:1]];
+        
         
         //键盘相关
         [self.view addSubview:self.textfiled];
@@ -47,6 +58,11 @@
         NSLog(@"结束了");
     });
 
+   
+   
+    
+  
+    
 }
 
 - (void)keyboardDidShow:(NSNotification *)notification{
